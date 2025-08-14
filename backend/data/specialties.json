@@ -1,0 +1,494 @@
+{
+  "Mantenimiento General": [
+    {
+      "value": "cambio-aceite-filtros",
+      "label": "Cambio de aceite y filtros"
+    },
+    {
+      "value": "service-programado",
+      "label": "Service programado (10k/20k/40k)"
+    },
+    {
+      "value": "revision-multipunto",
+      "label": "Revisión multipunto"
+    },
+    {
+      "value": "reemplazo-bujias",
+      "label": "Reemplazo de bujías"
+    },
+    {
+      "value": "correas-auxiliares",
+      "label": "Correas auxiliares"
+    },
+    {
+      "value": "limpieza-inyectores",
+      "label": "Limpieza de inyectores"
+    },
+    {
+      "value": "sistema-refrigeracion-mant",
+      "label": "Mantenimiento sistema de refrigeración"
+    },
+    {
+      "value": "previaje",
+      "label": "Inspección previaje"
+    },
+    {
+      "value": "cambio-bateria",
+      "label": "Cambio de batería"
+    }
+  ],
+  "Diagnóstico": [
+    {
+      "value": "scanner-obd2",
+      "label": "Diagnóstico por scanner OBD-II"
+    },
+    {
+      "value": "diagnostico-ruidos-vibraciones",
+      "label": "Diagnóstico de ruidos/vibraciones"
+    },
+    {
+      "value": "deteccion-fugas-liquidos",
+      "label": "Detección de fugas"
+    },
+    {
+      "value": "test-compresion",
+      "label": "Test de compresión"
+    },
+    {
+      "value": "prueba-carga-electrica",
+      "label": "Prueba de carga eléctrica"
+    },
+    {
+      "value": "smoke-test-admision",
+      "label": "Smoke test (admisión/escape)"
+    },
+    {
+      "value": "osciloscopio-sensores",
+      "label": "Análisis con osciloscopio"
+    },
+    {
+      "value": "datos-en-vivo",
+      "label": "Lectura de datos en vivo"
+    }
+  ],
+  "Frenos": [
+    {
+      "value": "pastillas-discos",
+      "label": "Cambio de pastillas y discos"
+    },
+    {
+      "value": "rectificado-discos",
+      "label": "Rectificado de discos"
+    },
+    {
+      "value": "zapatas-campanas",
+      "label": "Zapatas y campanas"
+    },
+    {
+      "value": "liquido-frenos-purgado",
+      "label": "Líquido de frenos y purgado"
+    },
+    {
+      "value": "pinzas-calipers",
+      "label": "Reparación de pinzas (calipers)"
+    },
+    {
+      "value": "bomba-maestra",
+      "label": "Bomba maestra / cilindros"
+    },
+    {
+      "value": "abs-esp",
+      "label": "ABS/ESP"
+    },
+    {
+      "value": "freno-mano",
+      "label": "Freno de mano (mecánico/eléctrico)"
+    },
+    {
+      "value": "flexibles-cañerias",
+      "label": "Flexibles y cañerías"
+    }
+  ],
+  "Motor y Transmisión": [
+    {
+      "value": "correa-distribucion",
+      "label": "Correa de distribución"
+    },
+    {
+      "value": "cadena-distribucion",
+      "label": "Cadena de distribución"
+    },
+    {
+      "value": "junta-culata",
+      "label": "Junta de culata"
+    },
+    {
+      "value": "inyectores-nafta",
+      "label": "Inyectores nafta"
+    },
+    {
+      "value": "inyectores-diesel",
+      "label": "Inyectores diésel / common-rail"
+    },
+    {
+      "value": "bomba-combustible",
+      "label": "Bomba de combustible"
+    },
+    {
+      "value": "turbo",
+      "label": "Turbo / geometría variable"
+    },
+    {
+      "value": "sistema-refrigeracion",
+      "label": "Radiador/termostato/bomba de agua"
+    },
+    {
+      "value": "embrague",
+      "label": "Embrague y volante bimasa"
+    },
+    {
+      "value": "caja-manual",
+      "label": "Caja manual"
+    },
+    {
+      "value": "caja-automatica",
+      "label": "Caja automática (service ATF/filtro)"
+    },
+    {
+      "value": "cvt",
+      "label": "Transmisión CVT"
+    },
+    {
+      "value": "semiejes-homocineticas",
+      "label": "Semiejes / homocinéticas"
+    },
+    {
+      "value": "diferencial-transmision",
+      "label": "Diferenciales / transfer"
+    }
+  ],
+  "Eléctrico / Electrónico": [
+    {
+      "value": "alternador",
+      "label": "Alternador"
+    },
+    {
+      "value": "motor-arranque",
+      "label": "Motor de arranque"
+    },
+    {
+      "value": "cableado-fusibles-reles",
+      "label": "Cableado, fusibles y relés"
+    },
+    {
+      "value": "ecu-bcm-reparacion",
+      "label": "ECU/BCM (reparación/programación)"
+    },
+    {
+      "value": "sensores-actuadores",
+      "label": "Sensores y actuadores"
+    },
+    {
+      "value": "cierre-centralizado",
+      "label": "Cierre centralizado"
+    },
+    {
+      "value": "levanta-vidrios",
+      "label": "Levantavidrios"
+    },
+    {
+      "value": "tablero-instrumentos",
+      "label": "Tablero de instrumentos"
+    }
+  ],
+  "Aire Acondicionado / Climatización": [
+    {
+      "value": "carga-gas",
+      "label": "Carga de gas y vacío"
+    },
+    {
+      "value": "deteccion-fugas-ac",
+      "label": "Detección de fugas A/C"
+    },
+    {
+      "value": "compresor-ac",
+      "label": "Compresor A/C"
+    },
+    {
+      "value": "condensador-evaporador",
+      "label": "Condensador/Evaporador"
+    },
+    {
+      "value": "valvula-expansion",
+      "label": "Válvula de expansión"
+    },
+    {
+      "value": "ventilador-electro",
+      "label": "Electroventiladores"
+    },
+    {
+      "value": "filtro-habitaculo",
+      "label": "Filtro de habitáculo"
+    },
+    {
+      "value": "calefaccion",
+      "label": "Calefacción"
+    },
+    {
+      "value": "higienizacion-clima",
+      "label": "Higienización del sistema"
+    }
+  ],
+  "Carrocería y Pintura": [
+    {
+      "value": "chapa-reparacion",
+      "label": "Chapa (reparación/estructura)"
+    },
+    {
+      "value": "pintura-parcial",
+      "label": "Pintura parcial"
+    },
+    {
+      "value": "pintura-total",
+      "label": "Pintura total"
+    },
+    {
+      "value": "pdr-desabollado",
+      "label": "Desabollado sin pintar (PDR)"
+    },
+    {
+      "value": "ploteo-vinilo",
+      "label": "Ploteo / vinilo"
+    },
+    {
+      "value": "pulido-lacado",
+      "label": "Pulido y lacado"
+    },
+    {
+      "value": "paragolpes-opticas",
+      "label": "Paragolpes / ópticas"
+    },
+    {
+      "value": "banco-chasis",
+      "label": "Banco de chasis / alineado"
+    }
+  ],
+  "Neumáticos, Dirección y Suspensión": [
+    {
+      "value": "cambio-neumaticos",
+      "label": "Cambio de neumáticos"
+    },
+    {
+      "value": "balanceo",
+      "label": "Balanceo"
+    },
+    {
+      "value": "alineacion",
+      "label": "Alineación"
+    },
+    {
+      "value": "rotacion",
+      "label": "Rotación"
+    },
+    {
+      "value": "reparacion-pinchaduras",
+      "label": "Reparación de pinchaduras"
+    },
+    {
+      "value": "tpms",
+      "label": "Sensores TPMS"
+    },
+    {
+      "value": "reparacion-llantas",
+      "label": "Reparación/rectificación de llantas"
+    },
+    {
+      "value": "amortiguadores",
+      "label": "Amortiguadores"
+    },
+    {
+      "value": "parrillas-bujes-rotulas",
+      "label": "Parrillas, bujes y rótulas"
+    },
+    {
+      "value": "cremallera-direccion",
+      "label": "Cremallera y caja de dirección"
+    }
+  ],
+  "Escape y Emisiones": [
+    {
+      "value": "catalizador",
+      "label": "Catalizador"
+    },
+    {
+      "value": "dpf-fap",
+      "label": "DPF/FAP"
+    },
+    {
+      "value": "silenciador",
+      "label": "Silenciador / múltiple de escape"
+    },
+    {
+      "value": "sonda-lambda",
+      "label": "Sonda lambda / sensores O2"
+    },
+    {
+      "value": "egr",
+      "label": "Válvula EGR"
+    },
+    {
+      "value": "control-emisiones",
+      "label": "Control de emisiones / pre-VTV"
+    }
+  ],
+  "GNC / GLP": [
+    {
+      "value": "instalacion-gnc",
+      "label": "Instalación GNC"
+    },
+    {
+      "value": "mantenimiento-gnc",
+      "label": "Mantenimiento GNC"
+    },
+    {
+      "value": "regulador-cilindro",
+      "label": "Regulador y cilindro"
+    },
+    {
+      "value": "oblea-prueba",
+      "label": "Oblea y prueba hidráulica"
+    },
+    {
+      "value": "estanqueidad",
+      "label": "Prueba de estanqueidad"
+    },
+    {
+      "value": "conversion-glp",
+      "label": "Conversiones GLP"
+    }
+  ],
+  "4x4 & Off-road": [
+    {
+      "value": "kit-elevacion",
+      "label": "Kit de elevación / suspensión"
+    },
+    {
+      "value": "snorkel",
+      "label": "Snorkel"
+    },
+    {
+      "value": "protecciones",
+      "label": "Protectores (cárter/caja/diferencial)"
+    },
+    {
+      "value": "bloqueo-diferenciales",
+      "label": "Bloqueo de diferenciales"
+    },
+    {
+      "value": "winch-maletin",
+      "label": "Winch / puntos de rescate"
+    },
+    {
+      "value": "transfer-ejes",
+      "label": "Transfer y ejes"
+    },
+    {
+      "value": "neumaticos-offroad",
+      "label": "Neumáticos off-road"
+    },
+    {
+      "value": "refuerzo-chasis",
+      "label": "Refuerzo de chasis"
+    }
+  ],
+  "Audio, Alarmas e Iluminación": [
+    {
+      "value": "estereo-multimedia",
+      "label": "Estéreo / multimedia"
+    },
+    {
+      "value": "parlantes-subwoofers",
+      "label": "Parlantes y subwoofers"
+    },
+    {
+      "value": "amplificadores-dsp",
+      "label": "Amplificadores / DSP"
+    },
+    {
+      "value": "manos-libres",
+      "label": "Manos libres / Bluetooth"
+    },
+    {
+      "value": "alarmas-rastreo",
+      "label": "Alarmas y GPS tracker"
+    },
+    {
+      "value": "sensores-estacionamiento",
+      "label": "Sensores de estacionamiento"
+    },
+    {
+      "value": "camara-reversa-360",
+      "label": "Cámara de reversa / 360°"
+    },
+    {
+      "value": "luces-led-xenon",
+      "label": "Luces LED/Xenón"
+    },
+    {
+      "value": "regulacion-faros",
+      "label": "Regulación y calibración de faros"
+    },
+    {
+      "value": "faros-auxiliares",
+      "label": "Faros auxiliares / DRL"
+    }
+  ],
+  "Detailing y Limpieza": [
+    {
+      "value": "lavado-completo",
+      "label": "Lavado completo"
+    },
+    {
+      "value": "lavado-motor",
+      "label": "Lavado de motor"
+    },
+    {
+      "value": "descontaminado-barra",
+      "label": "Descontaminado"
+    },
+    {
+      "value": "pulido-multietapas",
+      "label": "Pulido multietapas"
+    },
+    {
+      "value": "correccion-pintura",
+      "label": "Corrección de pintura"
+    },
+    {
+      "value": "coating-ceramico",
+      "label": "Coating cerámico / selladores"
+    },
+    {
+      "value": "limpieza-interior-tapizados",
+      "label": "Interior y tapizados"
+    },
+    {
+      "value": "ozono-olores",
+      "label": "Eliminación de olores (ozono)"
+    },
+    {
+      "value": "restauracion-opticas",
+      "label": "Restauración de ópticas"
+    },
+    {
+      "value": "cuidado-cuero",
+      "label": "Limpieza y nutrición de cuero"
+    }
+  ],
+  "Auxilio y Remolque": [
+    {
+      "value": "remolque-liviano",
+      "label": "Remolque liviano"
+    }
+  ]
+}
