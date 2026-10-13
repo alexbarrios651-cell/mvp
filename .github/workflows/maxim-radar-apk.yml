@@ -29,11 +29,13 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
+      - name: Comprobar parser y reglas de cálculo
+        run: bash tests/run.sh
       - name: Compilar APK
-        run: gradle --no-daemon :app:assembleDebug
+        run: gradle --no-daemon --console=plain :app:assembleDebug
       - name: Publicar APK
         uses: actions/upload-artifact@v4
         with:
-          name: Maxim-Radar-LIVE-v07-APK
+          name: Maxim-Radar-LIVE-v08-APK
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
