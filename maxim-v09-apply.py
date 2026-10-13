@@ -140,4 +140,11 @@ update(tests,'        System.out.println("CORE TESTS:',
                 "Multistop parser");
         System.out.println("CORE TESTS:''')
 Path("README-v09.md").write_text("""Maxim Radar v0.9 - beta informativa.\nLa estimacion horaria usa un escenario lento conservador y otro rapido favorable, ambos heuristicas sin mapas.\nVerde solo si ambas metas pasan el escenario lento; rojo solo si ambas fallan aun con el rapido; amarillo si es incierto.\nMinutos ambiguos de Maxim no se interpretan como ETA. No se entrenan estimaciones con otras estimaciones.\nNo cambia los permisos, preferencias, ni la pantalla de inicio de v0.8.1.\n""")
+# Keep the explicit-stop matcher tolerant of OCR spacing and escaped line separators.
+pp=core/"OfferParser.java"
+lines=pp.read_text().splitlines()
+for i,line in enumerate(lines):
+    if "private static final Pattern STOPS=" in line:
+        lines[i]='    private static final Pattern STOPS=Pattern.compile("([2-6])[ ]+paradas?",Pattern.CASE_INSENSITIVE);'
+pp.write_text("\n".join(lines)+"\n")
 print("Applied v0.9 source patch.")
