@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   push:
     branches: [maxim-radar-apk-20261013]
+    paths:
+      - maxim-radar-android-v0.3-compilacion.zip
+      - .github/workflows/maxim-radar-apk.yml
 permissions:
   contents: read
 jobs:
@@ -10,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Descomprimir proyecto
+        run: |
+          test -s maxim-radar-android-v0.3-compilacion.zip
+          unzip -q maxim-radar-android-v0.3-compilacion.zip -d project
+          test -f project/maxim-radar/app/build.gradle
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -19,9 +27,12 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - run: gradle --no-daemon :app:assembleDebug
-      - uses: actions/upload-artifact@v4
+      - name: Compilar APK
+        working-directory: project/maxim-radar
+        run: gradle --no-daemon :app:assembleDebug
+      - name: Publicar APK
+        uses: actions/upload-artifact@v4
         with:
           name: Maxim-Radar-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: project/maxim-radar/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
