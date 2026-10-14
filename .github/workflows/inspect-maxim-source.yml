@@ -1,0 +1,25 @@
+name: Inspeccionar fuente Maxim Radar
+on:
+  push:
+    branches: [maxim-radar-apk-20261013]
+    paths:
+      - .github/workflows/inspect-maxim-source.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          base64 -d maxim-radar-v092-src.tar.xz.b64 | tar -xJf - -C .
+          python3 tools/apply_samsung_v093.py
+          echo '--SERVICE--'
+          sed -n '1,490p' app/src/main/java/com/radarlocal/maxim/LiveCaptureService.java
+          echo '--PARSER--'
+          sed -n '1,290p' app/src/main/java/com/radarlocal/maxim/core/OfferParser.java
+          echo '--MODEL--'
+          cat app/src/main/java/com/radarlocal/maxim/core/TimeRiskModel.java
+          echo '--PREFS--'
+          cat app/src/main/java/com/radarlocal/maxim/Prefs.java
