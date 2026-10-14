@@ -185,6 +185,6 @@ manifest=root/"app/src/main/AndroidManifest.xml"
 replace_file(manifest,'<application android:label="Maxim Radar"',
     '<application android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:label="Maxim Radar"')
 gradle=root/"app/build.gradle"
-replace_file(gradle,"versionCode 12","versionCode 14")
-replace_file(gradle,"0.9.2-samsung-beta","0.9.4-samsung-clean")
+replace_file(gradle,"versionCode 13","versionCode 14")
+replace_file(gradle,"0.9.3-samsung-hotfix","0.9.4-samsung-clean")
 print("Clean Samsung v0.9.4 patch applied")
